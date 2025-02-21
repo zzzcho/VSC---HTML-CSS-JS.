@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="album-art">
+            <img src="Lana del rey.jpeg" alt="Album art">
+            <div class="action-buttons">
+                <button class="icon">❤️</button>
+                <button class="icon">➕</button>
+            </div>
+        </div>
+        <div class="song-details">
+            <audio id="audio" src="Lana Del Rey - Margaret (Audio) ft. Bleachers.mp3"></audio>
+            <h2 class="song-title">Margaret</h2>
+            <p class="song-artist">Lana Del Rey ft. Bleachers</p>
+            <div class="controls">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress" value="0" min="0" max="100">
+                <span type="duration">5:40</span>
+            </div>
+            <div class="buttons">
+                <button id="prev" class="control-btn">⏮</button>
+                <button id="play-pause" class="control-btn">▶</button>
+                <button id="next" class="control-btn">⏭</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
